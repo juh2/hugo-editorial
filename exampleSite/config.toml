@@ -1,0 +1,73 @@
+copyright = "Original-Theme is licensed with the Creative Commons Attribution 3.0 Unported License"
+baseurl = "http://replace-this-with-your-hugo-site.com/"
+title = "Editorial by HTML5 UP"
+theme = "hugo-editorial"
+Paginate = 3
+
+# DefaultContentLanguage = "en"
+# DefaultContentLanguageInSubdir = true
+
+[Languages]
+[Languages.en]
+	weight = 0
+	languageName = "English"
+	title = "Editorial by HTML5 UP"
+
+[[Languages.en.menu.main]]
+	url 	= "/"
+	name 	= "Home"
+	weight	= 0
+
+[Languages.de]
+	weight = 1
+	languageName = "Deutsch"
+	title = "Editorial von HTML5 UP"
+
+[[Languages.de.menu.main]]
+	url 	= "/de"
+	name 	= "Startseite"
+	weight	= 0
+
+
+[params]
+	fronttitle = "Hi, I’m Editorial<br />by HTML5 UP"
+	frontsubline = "A free and fully responsive site template"
+	frontintro = "Aenean ornare velit lacus, ac varius enim ullamcorper eu. Proin aliquam facilisis ante interdum congue. Integer mollis, nisl amet convallis, porttitor magna ullamcorper, amet egestas mauris. Ut magna finibus nisi nec lacinia. Nam maximus erat id euismod egestas. Pellentesque sapien ac quam. Lorem ipsum dolor sit nullam."
+	learnmore = "Learn More"
+	learnmorelink = "/"
+
+[params.contact]
+	title 		= "Get in touch"
+	intro 		= "Ut magna finibus nisi nec lacinia. Nam maximus erat id euismod egestas. Pellentesque sapien ac quam. Lorem ipsum dolor sit nullam."
+	email 		= "johndoe@example.com"
+	phone 		= "000 000 000"
+	address 	= "Foostreet<br />12345 Bartown"
+
+[params.miniposts]
+	title 		= "Lorem ipsum"
+
+[params.nav]
+	title 		= "Menu"
+
+[params.showcase]
+	title		= "Erat lacinia"
+	icon1		= "fa-diamond"
+	headline1	= "Portitor ullamcorper"
+	intro1		= "Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam."
+	icon2		= "fa-paper-plane"
+	headline2	= "Sapien veroeros"
+	intro2		= "Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam."
+	icon3		= "fa-rocket"
+	headline3	= "Quam lorem ipsum"
+	intro3		= "Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam."
+	icon4		= "fa-signal"
+	headline4	= "Sed magna finibus"
+	intro4		= "Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam."
+	title2 		= "Ipsum sed dolor"
+
+
+[[menu.main]]
+ 	name = "home"
+	url = "/"
+	weight = -200
+
