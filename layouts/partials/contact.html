@@ -1,0 +1,12 @@
+								<!-- Section -->
+								<section>
+									<header class="major">
+										<h2>{{ .Site.Params.contact.title }}</h2>
+									</header>
+									<p>{{ .Site.Params.contact.intro }}</p>
+									<ul class="contact">
+										<li class="fa-envelope-o"><a href="#">{{ .Site.Params.contact.email }}</a></li>
+										<li class="fa-phone">{{ .Site.Params.contact.phone }}</li>
+										<li class="fa-home">{{ .Site.Params.contact.address | safeHTML }}</li>
+									</ul>
+								</section>

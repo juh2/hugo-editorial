@@ -1,0 +1,20 @@
+							<!-- Section -->
+								<section>
+									<header class="major">
+										<h2>{{ .Site.Params.miniposts.title }}</h2>
+									</header>
+									<div class="mini-posts">
+	                               		{{ range first 3 .Site.Pages }}
+										<article>
+											<a href="{{ .Permalink }}" class="image">
+											{{ with .Params.image }}
+											<img src="{{ . }}" alt="" /></a>
+											{{ end }}
+											<p>{{ .Description }}</p>
+										</article>
+										{{ end }}
+									</div>
+									<ul class="actions">
+										<li><a href="/post" class="button">{{ i18n "allposts" }}</a></li>
+									</ul>
+								</section>

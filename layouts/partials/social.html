@@ -1,0 +1,14 @@
+								<header id="header">
+									<a href="/" class="logo">{{ .Site.Title }}</a>
+									<ul class="icons">
+										<li>{{ .Site.Data.i18n.share }}</li>
+										<li><a href="//twitter.com/share?url={{ .Permalink }}&text={{ .Title }}&via={{ .Site.Social.twitter }}" target="_blank"class="icon fa-twitter"><span class="label">Twitter</span></a></li>
+										<li><a href="//www.facebook.com/sharer/sharer.php?u={{ .Permalink }}" target="_blank" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
+										<li><a href="//plus.google.com/share?url={{ .Permalink }}" target="_blank" class="icon fa-google-plus"><span class="label">Google</span></a></li>
+										<li><a href="//reddit.com/submit?url={{ .Permalink }}&title={{ .Title }}" target="_blank" class="icon fa-reddit"><span class="label">Google</span></a></li>
+										<li><a href="//www.linkedin.com/shareArticle?url={{ .Permalink }}&title={{ .Title }}" target="_blank" class="icon fa-linkedin"><span class="label">Google</span></a></li>
+										<li><a href="//www.stumbleupon.com/submit?url={{ .Permalink }}&title={{ .Title }}" target="_blank" class="icon fa-stumbleupon"><span class="label">Google</span></a></li>
+										<li><a href="mailto:?subject=Read this article from {{ .Params.author }}&body={{ .Permalink }}" target="_blank" class="icon fa-envelope-o"><span class="label">Google</span></a></li>
+										{{ partial "lang.html" . }}
+									</ul>
+								</header>
