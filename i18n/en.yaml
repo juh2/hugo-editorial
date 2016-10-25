@@ -5,4 +5,7 @@
   translation: "All posts"
 
 - id: share
-  translation: "Share on"
+  translation: "Share"
+
+  - id: results
+  translation: "Results"

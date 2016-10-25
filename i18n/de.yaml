@@ -5,4 +5,7 @@
   translation: "Alle Artikel"
 
 - id: share
-  translation: "Teilen auf"
+  translation: "Teilen"
+
+- id: results
+  translation: "Suchergebnisse"
