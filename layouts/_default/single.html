@@ -5,7 +5,9 @@
 										<h1>{{ .Title }}</h1>
 									</header>
 
-									<span class="image main"><img src="{{ .Params.image }}" alt="" /></span>
+									{{ with .Params.images }}
+									<span class="image main"><img src="{{ index . 1 | absURL }}" alt="" /></span>
+									{{ end }}
 
 									<p>{{ .Content }}</p>
 									</section>

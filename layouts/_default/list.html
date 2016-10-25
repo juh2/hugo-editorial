@@ -7,8 +7,8 @@
 	                               {{ range (.Paginator 6).Pages }}
 										<article>
 											<a href="{{ .Permalink }}" class="image">
-											{{ with .Params.image }}
-											<img src="{{ . }}" alt="" />
+											{{ with .Params.images }}
+											<img src="{{ index . 1 | absURL }}" alt="" />
 											{{ end }}
 											</a>
 											<h3>{{ .Title }}</h3>
