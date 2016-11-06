@@ -9,3 +9,6 @@
 
 - id: results
   translation: "Suchergebnisse"
+
+- id: download
+  translation: "Herunterladen"
