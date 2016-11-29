@@ -8,7 +8,10 @@
 									{{ with .Params.images }}
 									<span class="image main"><img src="{{ index . 1 | absURL }}" alt="" /></span>
 									{{ end }}
-
-									<p>{{ .Content }}</p>
+									<p>
+									<strong>{{ .Description }}</strong>
+									</p>
+									
+									{{ .Content }}
 									</section>
 									{{ end }}
