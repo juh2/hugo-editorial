@@ -1,4 +1,4 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
 <!--
 	Editorial by HTML5 UP
 	html5up.net | @ajlkn
@@ -11,40 +11,40 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
 		<link rel="stylesheet" href="/css/main.css" />
-		<link rel="stylesheet" href="/css/pagination.css">
+		<link rel="stylesheet" href="/css/pagination.css" />
 		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
 		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
 		{{ template "_internal/twitter_cards.html" . }}
-	    {{ template "_internal/opengraph.html" . }}
-    	{{ template "_internal/schema.html" . }}
-     	{{ template "_internal/google_news.html" . }}
+		{{ template "_internal/opengraph.html" . }}
+		{{ template "_internal/schema.html" . }}
+		{{ template "_internal/google_news.html" . }}
 	</head>
 	<body>
 
 		<!-- Wrapper -->
-			<div id="wrapper">
+		<div id="wrapper">
 
-				<!-- Main -->
-					<div id="main">
-						<div class="inner">
+			<!-- Main -->
+			<div id="main">
+				<div class="inner">
 
-							<!-- Header -->
-								{{ partial "social.html" . }}
-						
-								{{ block "main" . }}{{ end }}
+					<!-- Header -->
+					{{ partial "social.html" . }}
 
-						</div>
-					</div>
+					{{ block "main" . }}{{ end }}
 
-				{{ partial "sidebar.html" . }}
-
+				</div>
 			</div>
 
+			{{ partial "sidebar.html" . }}
+
+		</div>
+
 		<!-- Scripts -->
-			<script src="/js/jquery.min.js"></script>
-			<script src="/js/skel.min.js"></script>
-			<script src="/js/util.js"></script>
-			<!--[if lte IE 8]><script src="/js/ie/respond.min.js"></script><![endif]-->
-			<script src="/js/main.js"></script>
+		<script src="/js/jquery.min.js"></script>
+		<script src="/js/skel.min.js"></script>
+		<script src="/js/util.js"></script>
+		<!--[if lte IE 8]><script src="/js/ie/respond.min.js"></script><![endif]-->
+		<script src="/js/main.js"></script>
 	</body>
 </html>
