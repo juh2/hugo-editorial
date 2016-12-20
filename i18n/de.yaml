@@ -6,3 +6,6 @@
 
 - id: share
   translation: "Teilen auf"
+
+- id: search
+  translation: "Suchen"

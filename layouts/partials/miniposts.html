@@ -7,9 +7,10 @@
 	                               		{{ range first 3 .Site.Pages }}
 										<article>
 											<a href="{{ .Permalink }}" class="image">
-											{{ with .Params.image }}
-											<img src="{{ . }}" alt="" /></a>
+											{{ with .Params.images }}
+											<img src="{{ index . 0 | absURL }}" alt="" /></a>
 											{{ end }}
+											<h5>{{ .Title }}</h5>
 											<p>{{ .Description }}</p>
 										</article>
 										{{ end }}
