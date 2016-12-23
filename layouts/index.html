@@ -60,7 +60,7 @@
 										<h2>{{ .Site.Params.showcase.title2 }}</h2>
 									</header>
 									<div class="posts">
-	                               {{ range first 6 .Data.Pages }}
+	                               {{ range first 6 ( where .Data.Pages "Section" "referenzen" ) }}
 										<article>
 											<a href="{{ .Permalink }}" class="image">
 											{{ with .Params.images }}
