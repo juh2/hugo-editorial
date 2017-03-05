@@ -1,0 +1,24 @@
+									{{ define "main" }}
+									<section>
+									<header class="major">
+										<h2>Arbeitsproben</h2>
+									</header>
+									<div class="posts">
+	                               {{ range (.Paginator 6).Pages }}
+										<article>
+											<a href="{{ .Permalink }}" class="image">
+											{{ with .Params.images }}
+											<img src="{{ index . 1 | absURL }}" alt="" />
+											{{ end }}
+											</a>
+											<h3>{{ .Title }}</h3>
+											<p>{{ .Description }}</p>
+											<ul class="actions">
+												<li><a href="{{ .Permalink }}" class="button">{{ i18n "morelink" }}</a></li>
+											</ul>
+										</article>
+									{{ end }}
+									</div>
+									{{ template "_internal/pagination.html" . }}
+								</section>
+								{{ end }}
