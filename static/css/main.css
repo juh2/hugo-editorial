@@ -1627,11 +1627,11 @@ a {
   -ms-transition: color 0.2s ease-in-out, border-bottom-color 0.2s ease-in-out;
   transition: color 0.2s ease-in-out, border-bottom-color 0.2s ease-in-out;
   border-bottom: dotted 1px;
-  color: #f56a6a;
+  color: #F8A11A;
   text-decoration: none; }
   a:hover {
-    border-bottom-color: #f56a6a;
-    color: #f56a6a !important; }
+    border-bottom-color: #F8A11A;
+    color: #F8A11A !important; }
     a:hover strong {
       color: inherit; }
 
@@ -1752,7 +1752,7 @@ header p {
   margin-top: -0.5em;
   text-transform: uppercase; }
 header.major > :last-child {
-  border-bottom: solid 3px #f56a6a;
+  border-bottom: solid 3px #F8A11A;
   display: inline-block;
   margin: 0 0 2em 0;
   padding: 0 0.75em 0.5em 0; }
@@ -1803,8 +1803,8 @@ textarea {
   input[type="tel"]:focus,
   select:focus,
   textarea:focus {
-    border-color: #f56a6a;
-    box-shadow: 0 0 0 1px #f56a6a; }
+    border-color: #F8A11A;
+    box-shadow: 0 0 0 1px #F8A11A; }
 
 .select-wrapper {
   text-decoration: none;
@@ -1894,8 +1894,8 @@ input[type="radio"] {
     content: '\f00c'; }
   input[type="checkbox"]:focus + label:before,
   input[type="radio"]:focus + label:before {
-    border-color: #f56a6a;
-    box-shadow: 0 0 0 1px #f56a6a; }
+    border-color: #F8A11A;
+    box-shadow: 0 0 0 1px #F8A11A; }
 
 input[type="checkbox"] + label:before {
   border-radius: 0.375em; }
@@ -2053,7 +2053,7 @@ ul {
         font-weight: normal;
         text-transform: none !important; }
       ul.contact li:before {
-        color: #f56a6a;
+        color: #F8A11A;
         display: inline-block;
         font-size: 1.5em;
         height: 1.125em;
@@ -2178,8 +2178,8 @@ button,
   background-color: transparent;
   border-radius: 0.375em;
   border: 0;
-  box-shadow: inset 0 0 0 2px #f56a6a;
-  color: #f56a6a !important;
+  box-shadow: inset 0 0 0 2px #F8A11A;
+  color: #F8A11A !important;
   cursor: pointer;
   display: inline-block;
   font-family: "Roboto Slab", serif;
@@ -2198,13 +2198,13 @@ button,
   input[type="button"]:hover,
   button:hover,
   .button:hover {
-    background-color: rgba(245, 106, 106, 0.05); }
+    background-color: rgba(248, 161, 26, 0.05); }
   input[type="submit"]:active,
   input[type="reset"]:active,
   input[type="button"]:active,
   button:active,
   .button:active {
-    background-color: rgba(245, 106, 106, 0.15); }
+    background-color: rgba(248, 161, 26, 0.15); }
   input[type="submit"].icon:before,
   input[type="reset"].icon:before,
   input[type="button"].icon:before,
@@ -2238,7 +2238,7 @@ button,
   input[type="button"].special,
   button.special,
   .button.special {
-    background-color: #f56a6a;
+    background-color: #F8A11A;
     box-shadow: none;
     color: #ffffff !important; }
     input[type="submit"].special:hover,
@@ -2246,13 +2246,13 @@ button,
     input[type="button"].special:hover,
     button.special:hover,
     .button.special:hover {
-      background-color: #f67878; }
+      background-color: #f8a729; }
     input[type="submit"].special:active,
     input[type="reset"].special:active,
     input[type="button"].special:active,
     button.special:active,
     .button.special:active {
-      background-color: #f45c5c; }
+      background-color: #f89b0b; }
   input[type="submit"].disabled, input[type="submit"]:disabled,
   input[type="reset"].disabled,
   input[type="reset"]:disabled,
@@ -2330,7 +2330,7 @@ button,
       text-align: center;
       width: 10em; }
       .features article .icon:before {
-        color: #f56a6a;
+        color: #F8A11A;
         font-size: 2.75rem;
         position: relative;
         top: 0.05em; }
@@ -2754,7 +2754,7 @@ button,
   display: -webkit-flex;
   display: -ms-flex;
   display: flex;
-  border-bottom: solid 5px #f56a6a;
+  border-bottom: solid 5px #F8A11A;
   padding: 6em 0 1em 0;
   position: relative; }
   #header > * {
@@ -2893,7 +2893,7 @@ button,
     font-size: 0.9em;
     padding: 0.625em 0; }
     #menu ul a:hover, #menu ul span:hover {
-      color: #f56a6a; }
+      color: #F8A11A; }
     #menu ul a.opener, #menu ul span.opener {
       -moz-transition: color 0.2s ease-in-out;
       -webkit-transition: color 0.2s ease-in-out;
@@ -2919,7 +2919,7 @@ button,
         position: absolute;
         right: 0; }
       #menu ul a.opener:hover:before, #menu ul span.opener:hover:before {
-        color: #f56a6a; }
+        color: #F8A11A; }
       #menu ul a.opener.active + ul, #menu ul span.opener.active + ul {
         display: block; }
       #menu ul a.opener.active:before, #menu ul span.opener.active:before {
@@ -2962,7 +2962,7 @@ button,
   padding: 6px 12px;
   margin-left: -1px;
   line-height: 1.42857143;
-  color: #f56a6a;
+  color: #F8A11A;
   text-decoration: none;
   background-color: #fff;
   border: 1px solid #ddd; }
@@ -2983,7 +2983,7 @@ button,
 .pagination > li > a:focus,
 .pagination > li > span:focus {
   z-index: 2;
-  color: #f56a6a;
+  color: #F8A11A;
   background-color: #eee;
   border-color: #ddd; }
 
@@ -2996,8 +2996,8 @@ button,
   z-index: 3;
   color: #fff;
   cursor: default;
-  background-color: #f56a6a;
-  border-color: #f56a6a; }
+  background-color: #F8A11A;
+  border-color: #F8A11A; }
 
 .pagination > .disabled > span,
 .pagination > .disabled > span:hover,
