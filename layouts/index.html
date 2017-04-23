@@ -64,7 +64,7 @@
 										<article>
 											<a href="{{ .Permalink }}" class="image">
 											{{ with .Params.images }}
-											<img src="{{ index . 1 | absURL }}" alt="" />
+											<img src="{{ index . 0 | absURL }}" alt="" />
 											{{ end }}
 											</a>
 											<h3>{{ .Title }}</h3>
