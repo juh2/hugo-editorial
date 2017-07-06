@@ -6,7 +6,7 @@
 									</header>
 
 									{{ with .Params.images }}
-									<span class="image main"><img src="{{ index . 1 | absURL }}" alt="" /></span>
+									<span class="image main"><img src="{{ index . 1 | relURL }}" alt="" /></span>
 									{{ end }}
 
 									<p><strong>{{ .Description }}</strong></p>
