@@ -63,8 +63,10 @@
 	                               {{ range first 6 ( where .Data.Pages "Section" "referenzen" ) }}
 										<article>
 											<a href="{{ .Permalink }}" class="image">
-											{{ with .Params.images }}
-											<img src="{{ index . 0 | relURL }}" alt="" />
+											{{ $preview := .Resources.GetMatch "intro" }}
+											{{ with $preview }}
+											{{ $scaled := .Resize "706x" }}
+											<img src="{{ $scaled.Permalink }}" alt="" />
 											{{ end }}
 											</a>
 											<h3>{{ .Title }}</h3>

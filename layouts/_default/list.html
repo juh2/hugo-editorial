@@ -7,8 +7,10 @@
 	                               {{ range (.Paginator 6).Pages }}
 										<article>
 											<a href="{{ .Permalink }}" class="image">
-											{{ with .Params.images }}
-											<img src="{{ index . 0 | relURL }}" alt="" />
+											{{ $preview := .Resources.GetMatch "intro" }}
+											{{ with $preview }}
+											{{ $scaled := .Resize "573x" }}
+											<img src="{{ $scaled.Permalink }}" alt="" />
 											{{ end }}
 											</a>
 											<h3>{{ .Title }}</h3>
