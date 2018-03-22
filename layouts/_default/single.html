@@ -1,20 +1,20 @@
-									{{ define "main"}}
+{{ define "main"}}
 
-									<section>
-									<header class="main">
-										<h1>{{ .Title }}</h1>
-									</header>
+<section>
+  <header class="main">
+    <h1>{{ .Title }}</h1>
+  </header>
 
-									{{ $preview := .Resources.GetMatch "intro" }}
-									{{ with $preview }}
-									{{ $scaled := .Resize "1162x" }}
-									<img class="image main" src="{{ $scaled.Permalink }}" alt="" />
-									{{ end }}
+  {{ $preview := .Resources.GetMatch "intro" }}
+  {{ with $preview }}
+  {{ $scaled := .Resize "1162x" }}
+  <img class="image main" src="{{ $scaled.Permalink }}" alt="" />
+  {{ end }}
 
-									<p><strong>{{ .Description }}</strong></p>
+  <p><strong>{{ .Description }}</strong></p>
 
-									<p>{{ .Content }}</p>
-									</section>
-									{{ $page_link := .Permalink }}
-									{{ end }}
+  <p>{{ .Content }}</p>
+</section>
+{{ $page_link := .Permalink }}
+{{ end }}
 

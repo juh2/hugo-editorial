@@ -1,23 +1,23 @@
-							<!-- Menu -->
-								<nav id="menu">
-									<header class="major">
-										<h2><img src="/images/logo.svg"><!--{{ .Site.Params.nav.title }}--></h2>
-									</header>
-									<ul>
-								        {{ $currentNode := . }}
-          								{{ range .Site.Menus.main }}
-              							{{ if .HasChildren }}
-										<li class="sub-menu{{if $currentNode.HasMenuCurrent "main" . }} active{{end}}">
-											<span class="opener">{{ .Name }}</span>
-											<ul>
-												{{ range .Children }}
-												<li><a href="{{ .URL }}">{{ .Name }}</a></li>
-												{{ end }}
-											</ul>
-										</li>
-										{{ else }}
-										<li><a href="{{ .URL }}">{{ .Name }}</a></li>
-										{{ end }}
-										{{ end }}
-									</ul>
-								</nav>
+<!-- Menu -->
+<nav id="menu">
+  <header class="major">
+    <h2><img src="/images/logo.svg"><!--{{ .Site.Params.nav.title }}--></h2>
+  </header>
+  <ul>
+    {{ $currentNode := . }}
+    {{ range .Site.Menus.main }}
+    {{ if .HasChildren }}
+    <li class="sub-menu{{if $currentNode.HasMenuCurrent "main" . }} active{{end}}">
+      <span class="opener">{{ .Name }}</span>
+      <ul>
+	{{ range .Children }}
+	<li><a href="{{ .URL }}">{{ .Name }}</a></li>
+	{{ end }}
+      </ul>
+    </li>
+    {{ else }}
+    <li><a href="{{ .URL }}">{{ .Name }}</a></li>
+    {{ end }}
+    {{ end }}
+  </ul>
+</nav>

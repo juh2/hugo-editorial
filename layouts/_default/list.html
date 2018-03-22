@@ -1,26 +1,26 @@
-									{{ define "main" }}
-									<section>
-									<header class="major">
-										<h2>{{ i18n "allposts" }}</h2>
-									</header>
-									<div class="posts">
-	                               {{ range (.Paginator 6).Pages }}
-										<article>
-											<a href="{{ .Permalink }}" class="image">
-											{{ $preview := .Resources.GetMatch "intro" }}
-											{{ with $preview }}
-											{{ $scaled := .Resize "573x" }}
-											<img src="{{ $scaled.Permalink }}" alt="" />
-											{{ end }}
-											</a>
-											<h3>{{ .Title }}</h3>
-											<p>{{ .Summary }}</p>
-											<ul class="actions">
-												<li><a href="{{ .Permalink }}" class="button">{{ i18n "morelink" }}</a></li>
-											</ul>
-										</article>
-									{{ end }}
-									</div>
-									{{ template "_internal/pagination.html" . }}
-								</section>
-								{{ end }}
+{{ define "main" }}
+<section>
+  <header class="major">
+    <h2>{{ i18n "allposts" }}</h2>
+  </header>
+  <div class="posts">
+    {{ range (.Paginator 6).Pages }}
+    <article>
+      <a href="{{ .Permalink }}" class="image">
+	{{ $preview := .Resources.GetMatch "intro" }}
+	{{ with $preview }}
+	{{ $scaled := .Resize "573x" }}
+	<img src="{{ $scaled.Permalink }}" alt="" />
+	{{ end }}
+      </a>
+      <h3>{{ .Title }}</h3>
+      <p>{{ .Summary }}</p>
+      <ul class="actions">
+	<li><a href="{{ .Permalink }}" class="button">{{ i18n "morelink" }}</a></li>
+      </ul>
+    </article>
+    {{ end }}
+  </div>
+  {{ template "_internal/pagination.html" . }}
+</section>
+{{ end }}

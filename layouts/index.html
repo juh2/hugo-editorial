@@ -1,81 +1,80 @@
+{{ define "main" }}
+<!-- Banner -->
+<section id="banner">
+  <div class="content">
+    <header>
+      <h1>{{ .Site.Params.fronttitle | safeHTML }}</h1>
+      <p>{{ .Site.Params.frontsubline | safeHTML }}</p>
+    </header>
+    <p>{{ .Site.Params.frontintro | safeHTML }}</p>
+    <ul class="actions">
+      <li><a href="{{ .Site.Params.learnmorelink }}" class="button big">{{ .Site.Params.learnmore }}</a></li>
+    </ul>
+  </div>
+  <span class="image object">
+    <img src="/images/juh-klein.jpg" alt="" />
+  </span>
+</section>
 
-								{{ define "main" }}
-							<!-- Banner -->
-								<section id="banner">
-									<div class="content">
-										<header>
-											<h1>{{ .Site.Params.fronttitle | safeHTML }}</h1>
-											<p>{{ .Site.Params.frontsubline | safeHTML }}</p>
-										</header>
-										<p>{{ .Site.Params.frontintro | safeHTML }}</p>
-										<ul class="actions">
-											<li><a href="{{ .Site.Params.learnmorelink }}" class="button big">{{ .Site.Params.learnmore }}</a></li>
-										</ul>
-									</div>
-									<span class="image object">
-										<img src="/images/juh-klein.jpg" alt="" />
-									</span>
-								</section>
+<!-- Section -->
+<section>
+  <header class="major">
+    <h2>{{ .Site.Params.showcase.title }}</h2>
+  </header>
+  <div class="features">
+    <article>
+      <span class="icon {{ .Site.Params.showcase.icon1 }}"></span>
+      <div class="content">
+	<h3>{{ .Site.Params.showcase.headline1 }}</h3>
+	<p>{{ .Site.Params.showcase.intro1 }}</p>
+      </div>
+    </article>
+    <article>
+      <span class="icon {{ .Site.Params.showcase.icon2 }}"></span>
+      <div class="content">
+	<h3>{{ .Site.Params.showcase.headline2 }}</h3>
+	<p>{{ .Site.Params.showcase.intro2 }}</p>
+      </div>
+    </article>
+    <article>
+      <span class="icon {{ .Site.Params.showcase.icon3 }}"></span>
+      <div class="content">
+	<h3>{{ .Site.Params.showcase.headline3 }}</h3>
+	<p>{{ .Site.Params.showcase.intro3 }}</p>
+      </div>
+    </article>
+    <article>
+      <span class="icon {{ .Site.Params.showcase.icon4 }}"></span>
+      <div class="content">
+	<h3>{{ .Site.Params.showcase.headline4 }}</h3>
+	<p>{{ .Site.Params.showcase.intro4 }}</p>
+      </div>
+    </article>
+  </div>
+</section>
 
-							<!-- Section -->
-								<section>
-									<header class="major">
-										<h2>{{ .Site.Params.showcase.title }}</h2>
-									</header>
-									<div class="features">
-										<article>
-											<span class="icon {{ .Site.Params.showcase.icon1 }}"></span>
-											<div class="content">
-												<h3>{{ .Site.Params.showcase.headline1 }}</h3>
-												<p>{{ .Site.Params.showcase.intro1 }}</p>
-											</div>
-										</article>
-										<article>
-											<span class="icon {{ .Site.Params.showcase.icon2 }}"></span>
-											<div class="content">
-												<h3>{{ .Site.Params.showcase.headline2 }}</h3>
-												<p>{{ .Site.Params.showcase.intro2 }}</p>
-											</div>
-										</article>
-										<article>
-											<span class="icon {{ .Site.Params.showcase.icon3 }}"></span>
-											<div class="content">
-												<h3>{{ .Site.Params.showcase.headline3 }}</h3>
-												<p>{{ .Site.Params.showcase.intro3 }}</p>
-											</div>
-										</article>
-										<article>
-											<span class="icon {{ .Site.Params.showcase.icon4 }}"></span>
-											<div class="content">
-												<h3>{{ .Site.Params.showcase.headline4 }}</h3>
-												<p>{{ .Site.Params.showcase.intro4 }}</p>
-											</div>
-										</article>
-									</div>
-								</section>
-
-							<!-- Section -->
-								<section>
-									<header class="major">
-										<h2>{{ .Site.Params.showcase.title2 }}</h2>
-									</header>
-									<div class="posts">
-	                               {{ range first 6 ( where .Data.Pages "Section" "referenzen" ) }}
-										<article>
-											<a href="{{ .Permalink }}" class="image">
-											{{ $preview := .Resources.GetMatch "intro" }}
-											{{ with $preview }}
-											{{ $scaled := .Resize "706x" }}
-											<img src="{{ $scaled.Permalink }}" alt="" />
-											{{ end }}
-											</a>
-											<h3>{{ .Title }}</h3>
-											<p>{{ .Summary }}</p>
-											<ul class="actions">
-												<li><a href="{{ .Permalink }}" class="button">{{ i18n "morelink" }}</a></li>
-											</ul>
-										</article>
-									{{ end }}
-									</div>
-								</section>
-								{{ end }}
+<!-- Section -->
+<section>
+  <header class="major">
+    <h2>{{ .Site.Params.showcase.title2 }}</h2>
+  </header>
+  <div class="posts">
+    {{ range first 6 ( where .Data.Pages "Section" "referenzen" ) }}
+    <article>
+      <a href="{{ .Permalink }}" class="image">
+	{{ $preview := .Resources.GetMatch "intro" }}
+	{{ with $preview }}
+	{{ $scaled := .Resize "706x" }}
+	<img src="{{ $scaled.Permalink }}" alt="" />
+	{{ end }}
+      </a>
+      <h3>{{ .Title }}</h3>
+      <p>{{ .Summary }}</p>
+      <ul class="actions">
+	<li><a href="{{ .Permalink }}" class="button">{{ i18n "morelink" }}</a></li>
+      </ul>
+    </article>
+    {{ end }}
+  </div>
+</section>
+{{ end }}

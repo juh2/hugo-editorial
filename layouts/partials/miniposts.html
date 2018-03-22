@@ -1,23 +1,23 @@
-							<!-- Section -->
-								<section>
-									<header class="major">
-										<h2>{{ .Site.Params.miniposts.title }}</h2>
-									</header>
-									<div class="mini-posts">
-	                               		{{ range first 3 ( where .Site.Pages "Section" "post" ) }}
-										<article>
-											<a href="{{ .Permalink }}" class="image">
-											{{ $preview := .Resources.GetMatch "intro" }}
-											{{ with $preview }}
-											{{ $scaled := .Resize "320x" }}
-											<img src="{{ $scaled.Permalink }}" alt="" />
-											{{ end }}
-											<h5>{{ .Title }}</h5>
-											<p>{{ .Description }}</p>
-										</article>
-										{{ end }}
-									</div>
-									<ul class="actions">
-										<li><a href="/post" class="button">{{ i18n "allposts" }}</a></li>
-									</ul>
-								</section>
+<!-- Section -->
+<section>
+  <header class="major">
+    <h2>{{ .Site.Params.miniposts.title }}</h2>
+  </header>
+  <div class="mini-posts">
+    {{ range first 3 ( where .Site.Pages "Section" "post" ) }}
+    <article>
+      <a href="{{ .Permalink }}" class="image">
+	{{ $preview := .Resources.GetMatch "intro" }}
+	{{ with $preview }}
+	{{ $scaled := .Resize "320x" }}
+	<img src="{{ $scaled.Permalink }}" alt="" />
+	{{ end }}
+	<h5>{{ .Title }}</h5>
+	<p>{{ .Description }}</p>
+    </article>
+    {{ end }}
+  </div>
+  <ul class="actions">
+    <li><a href="/post" class="button">{{ i18n "allposts" }}</a></li>
+  </ul>
+</section>
