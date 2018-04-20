@@ -10,7 +10,7 @@
 	{{ $preview := .Resources.GetMatch "intro" }}
 	{{ with $preview }}
 	{{ $scaled := .Resize "320x" }}
-	<img src="{{ $scaled.Permalink }}" alt="" />
+	<img src="{{ $scaled.RelPermalink }}" alt="" />
 	{{ end }}
 	<h5>{{ .Title }}</h5>
 	<p>{{ .Description }}</p>
