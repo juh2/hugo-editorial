@@ -4,7 +4,7 @@
     <h2>{{ .Site.Params.miniposts.title }}</h2>
   </header>
   <div class="mini-posts">
-    {{ range first 3 ( where .Site.Pages "Section" "post" ) }}
+    {{ range first 3 ( where .Site.RegularPages "Section" "post" ) }}
     <article>
       <a href="{{ .Permalink }}" class="image">
 	{{ $preview := .Resources.GetMatch "intro" }}
