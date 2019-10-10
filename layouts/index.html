@@ -64,7 +64,7 @@
       <a href="{{ .Permalink }}" class="image">
 	{{ $preview := .Resources.GetMatch "intro" }}
 	{{ with $preview }}
-	{{ $scaled := .Resize "706x" }}
+	{{ $scaled := .Resize "338x CatmullRom" }}
 	<img src="{{ $scaled.RelPermalink }}" alt="" />
 	{{ end }}
       </a>
