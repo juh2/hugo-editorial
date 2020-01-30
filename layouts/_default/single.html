@@ -7,7 +7,7 @@
 
   {{ $preview := .Resources.GetMatch "intro" }}
   {{ with $preview }}
-  {{ $scaled := .Resize "1162x" }}
+  {{ $scaled := .Resize "1294x" }}
   <img class="image main" src="{{ $scaled.RelPermalink }}" alt="" />
   {{ end }}
 
